@@ -254,6 +254,9 @@ To reproduce the same behavior of the `JSLink` custom field rendering, you need 
     > [!NOTE]
     > Alternatively, you can create serve configuration entries in the **config/serve.json** file in your project to automate the creation of the debug query string parameters as outlined in this document: [Debug SharePoint Framework solutions on modern SharePoint pages](/sharepoint/dev/spfx/debug-modern-pages#debug-sharepoint-framework-extensions-on-modern-sharepoint-pages)
 
+> [!NOTE]
+> The OnRenderCell method is not called when a column has a custom JSON formatting applied. A default pill styling is applied to choice columns when the column is created using the modern experience.
+
 ## Define the new Field Customizer with TypeScript
 
 You're now ready to replace the JavaScript code with TypeScript to benefit from the fully typed approach of TypeScript.
